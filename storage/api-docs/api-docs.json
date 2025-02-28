@@ -15,13 +15,13 @@
         }
     ],
     "paths": {
-        "/api/login": {
+        "/api/v1/login": {
             "post": {
                 "tags": [
                     "Autenticación"
                 ],
                 "summary": "Iniciar sesión y generar token de acceso",
-                "operationId": "222b2625838e3c57e017987f73598fda",
+                "operationId": "3b03eb66e9fc14dbed91d82e3a240a06",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -77,13 +77,13 @@
                 }
             }
         },
-        "/api/logout": {
+        "/api/v1/logout": {
             "post": {
                 "tags": [
                     "Autenticación"
                 ],
                 "summary": "Cerrar sesión y revocar token",
-                "operationId": "ad65cbbd4e9f201619eae184a5961a98",
+                "operationId": "ee643cac55a982fc398983af84bf28aa",
                 "responses": {
                     "200": {
                         "description": "Sesión finalizada correctamente",

@@ -24,7 +24,7 @@ php artisan make:middleware NuevoMiddleware
 ## Recursos
 
 * [Documentación de Sanctum](https://laravel.com/docs/12.x/sanctum#main-content)
-* [Spatie permissions](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
+
 * [Instalacion de Swagger](https://salim-hosen.medium.com/how-to-document-your-laravel-api-using-swagger-5480044bd860)
 
 
