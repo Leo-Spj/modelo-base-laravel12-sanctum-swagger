@@ -5,6 +5,15 @@
         "description": "Laravel Swagger API Documentation",
         "version": "1.0"
     },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "API Server"
+        },
+        {
+            "url": "/api"
+        }
+    ],
     "paths": {
         "/api/login": {
             "post": {
@@ -101,10 +110,25 @@
             }
         }
     },
+    "components": {
+        "securitySchemes": {
+            "sanctum": {
+                "type": "http",
+                "description": "Bearer authentication with Sanctum",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
     "tags": [
         {
             "name": "Autenticación",
             "description": "Autenticación"
+        }
+    ],
+    "security": [
+        {
+            "sanctum": []
         }
     ]
 }
